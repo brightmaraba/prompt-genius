@@ -1,0 +1,6 @@
+{
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "pylint.args": ["--good-names=x,y,z,i,j,n,f"]
+}

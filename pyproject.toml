@@ -8,6 +8,10 @@ packages = [{include = "prompt_genius", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+openai = "^0.27.8"
+python-dotenv = "^1.0.0"
+black = "^23.7.0"
+flake8 = "^6.1.0"
 
 
 [build-system]
