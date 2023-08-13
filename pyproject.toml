@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "prompt-genius"
+version = "0.1.0"
+description = ""
+authors = ["brightmaraba <brightkoech@gmail.com>"]
+readme = "README.md"
+packages = [{include = "prompt_genius", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
