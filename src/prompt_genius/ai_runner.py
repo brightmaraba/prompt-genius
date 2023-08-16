@@ -58,3 +58,18 @@ def generate_code(prompt: str, temperature=0.5, max_tokens=256) -> dict:
         temperature=temperature,
     )
     return response["choices"][0]["text"].strip()  # type: ignore
+
+def generate_images(prompt: str) -> object:
+    """
+    Generates images from prompt
+    param: prompt: The prompt to generate images from
+    return: pictures: The generated images
+    """
+    set_openapi_key(".env")
+    response = openai.Image.create(
+        prompt = prompt,
+        n=1,
+        size="1024x1024",
+    )
+    image_url = response['data'][0]['url']  # type: ignore
+    return image_url

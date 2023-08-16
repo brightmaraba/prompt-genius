@@ -14,15 +14,14 @@ __email__ = "info@libranconsult.com"
 __status__ = ""
 
 # Import modules
-from prompt_genius.ai_runner import generate_code
+from prompt_genius.ai_runner import generate_images
 
 # Run the code generator
 
 if __name__ == "__main__":
     CODE_PROMPT = (
-        "Write a python function that takes a String"
-        "as input and returns the number of vowels in the string."
+        "You are a graphics designer. Generate a logo for a company called 'Piety Health' which offers care and nursing support to the disability sector in Australia"
     )
 
-    code = generate_code(CODE_PROMPT)  # type: ignore
+    code = generate_images(CODE_PROMPT)  # type: ignore
     print(code)
